@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  position: relative;
+  overflow-x: hidden;
+
+  color: $text-black;
+  font-family: $regular-font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.body-index {
+  background-color: $bg-body;
+  background-image: url('../img/index-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.body-tip {
+  background-color: $bg-body;
+  background-image: url('../img/tip-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.body-event {
+  background-color: $bg-body;
+  background-image: url('../img/event-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.body-gallery {
+  background-color: $bg-body;
+  background-image: url('../img/gallery-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
