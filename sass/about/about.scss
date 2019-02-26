@@ -21,10 +21,13 @@
     text-align: center;
 
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   &__description {
+    display: block;
+    width: 810px;
+
     font: {
       size: 1.375em;
       family: $regular-font;
@@ -44,6 +47,26 @@
 
     &--second {
       margin-bottom: 50px;
+
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 186px;
+        height: 22px;
+
+        background-image: url('../img/star.png');
+        background-repeat: no-repeat;
+        background-size: 186px 22px;
+        background-position: left center;
+
+        bottom: -30px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
     }
 
     &--third {

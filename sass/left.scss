@@ -5,6 +5,7 @@
   align-items: center;
 
   width: 380px;
+  margin-right: 40px;
 
   &__wrap {
     display: flex;
@@ -17,9 +18,21 @@
       min-height: 352px;
     }
 
+    &--upabout {
+      min-width: 310px;
+      min-height: 373px;
+
+      margin-bottom: 20px;
+    }
+
     &--down {
       min-width: 330px;
       min-height: 369px;
+    }
+
+    &--downabout {
+      min-width: 351px;
+      min-height: 351px;
     }
   }
 
