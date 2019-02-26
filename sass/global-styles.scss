@@ -49,14 +49,24 @@ body {
   background-color: $bg-body;
   background-image: url('../img/bg-show.jpg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
+  background-size: cover;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-position: bottom center;
+  }
 }
 
 .body--about {
   background-color: $bg-body;
   background-image: url('../img/bg-about.jpg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
+  background-size: cover;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-position: bottom center;
+  }
 }
 
 img {

@@ -52,10 +52,7 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .header-nav {
+    width: 100%;
     padding-top: 24px;
-
-    &__opener {
-      display: none;
-    }
   }
 }

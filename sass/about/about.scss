@@ -4,14 +4,14 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 860px;
+  width: 320px;
 
   &__title {
     display: block;
-    width: 880px;
+    width: 300px;
 
     font: {
-      size: 4.5em;
+      size: 1.875em;
       family: $bold-font;
     }
 
@@ -21,17 +21,17 @@
     text-align: center;
 
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &__description {
     display: block;
-    width: 810px;
+    width: 300px;
 
     font: {
-      size: 1.375em;
+      size: 0.75em;
       family: $regular-font;
-      weight: 300;
+      weight: 100;
     }
 
     color: $text-white;
@@ -42,11 +42,11 @@
     margin-top: 0;
 
     &--first {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &--second {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
 
       position: relative;
 
@@ -54,15 +54,15 @@
         position: absolute;
         content: '';
 
-        width: 186px;
-        height: 22px;
+        width: 139px;
+        height: 16px;
 
         background-image: url('../img/star.png');
         background-repeat: no-repeat;
-        background-size: 186px 22px;
+        background-size: 139px 16px;
         background-position: left center;
 
-        bottom: -30px;
+        bottom: -17px;
         left: 50%;
 
         transform: translateX(-50%);
@@ -71,6 +71,174 @@
 
     &--third {
       margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .about {
+    width: 394px;
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 2em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      width: 380px;
+
+      font: {
+        size: 0.875em;
+      }
+
+      margin-top: 0;
+
+      &--first {
+        margin-bottom: 30px;
+      }
+
+      &--second {
+        margin-bottom: 40px;
+
+        &::after {
+          width: 139px;
+          height: 16px;
+
+          background-size: 139px 16px;
+
+          bottom: -27px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .about {
+    width: 610px;
+
+    &__title {
+      width: 600px;
+
+      font: {
+        size: 3em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      width: 610px;
+
+      font: {
+        size: 1.125em;
+      }
+
+      &--first {
+        margin-bottom: 30px;
+      }
+
+      &--second {
+        margin-bottom: 40px;
+
+        &::after {
+          width: 139px;
+          height: 16px;
+
+          background-size: 139px 16px;
+
+          bottom: -27px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 860px;
+
+    &__title {
+      width: 880px;
+
+      font: {
+        size: 4em;
+        family: $bold-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-transform: uppercase;
+      text-align: center;
+
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      display: block;
+      width: 810px;
+
+      font: {
+        size: 1.375em;
+        family: $regular-font;
+        weight: 300;
+      }
+
+      color: $text-white;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: left;
+
+      margin-top: 0;
+
+      &--first {
+        margin-bottom: 20px;
+      }
+
+      &--second {
+        margin-bottom: 50px;
+
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+
+          width: 186px;
+          height: 22px;
+
+          background-image: url('../img/star.png');
+          background-repeat: no-repeat;
+          background-size: 186px 22px;
+          background-position: left center;
+
+          bottom: -30px;
+          left: 50%;
+
+          transform: translateX(-50%);
+        }
+      }
+
+      &--third {
+        margin: 0;
+      }
     }
   }
 }

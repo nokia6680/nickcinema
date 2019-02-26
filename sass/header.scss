@@ -129,13 +129,27 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .header {
+    align-items: flex-start;
     margin-top: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 120px;
     padding-right: 120px;
 
     &__logo {
       min-width: 304px;
       min-height: 135px;
+    }
+
+    &__closer {
+      display: none;
+    }
+
+    &__controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
     }
   }
 }

@@ -5,7 +5,7 @@
   margin-top: auto;
 
   padding-top: 4px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 
   background-color: $bg-footer;
 
@@ -27,8 +27,8 @@
 
   &__copyright {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -36,11 +36,73 @@
     font: {
       size: 0.438em;
       family: $light-font;
+      weight: 100;
     }
 
     color: $text-footer;
     opacity: 0.3;
     line-height: 1;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+
+}
+
+@media only screen and (min-width: $tablet) {
+
+}
+
+@media only screen and (min-width: $laptop) {
+
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .footer {
+    width: 100%;
+
+    margin-bottom: 0;
+    margin-top: auto;
+
+    padding-top: 4px;
+    padding-bottom: 7px;
+
+    background-color: $bg-footer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    &__wrapper {
+      @include container;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__copyright {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      font: {
+        size: 0.438em;
+        family: $light-font;
+      }
+
+      color: $text-footer;
+      opacity: 0.3;
+      line-height: 1;
+      text-transform: uppercase;
+    }
   }
 }
