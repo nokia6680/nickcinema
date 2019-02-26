@@ -1,0 +1,55 @@
+.time-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 60px;
+
+  &__item {
+    width: 185px;
+    height: 185px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  &__counter {
+    text-align: center;
+
+    font: {
+      size: 100px;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    margin-bottom: 0;
+  }
+
+  &__name {
+    font: {
+      size: 1.813em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}

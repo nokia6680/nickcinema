@@ -1,0 +1,30 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 380px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--up {
+      min-width: 300px;
+      min-height: 352px;
+    }
+
+    &--down {
+      min-width: 330px;
+      min-height: 369px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}

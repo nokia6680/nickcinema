@@ -1,0 +1,26 @@
+.show-slider {
+  width: 100%;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  .slick-dots {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

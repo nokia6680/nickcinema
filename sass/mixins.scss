@@ -5,8 +5,8 @@
   max-width: 100%;
 
   @media only screen and (min-width: $laptop-wide) {
-    width: 100%;
-    max-width: 1150px;
+    width: auto;
+    max-width: 1680px;
     margin: 0 auto;
     padding: 0;
   }

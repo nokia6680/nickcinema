@@ -21,13 +21,13 @@
 	<![endif]-->
 </head>
 
-<body class="body-index">
+<body class="body--index">
 	<div class="wrapper">
 		<!--Page header-->
 		<header class="header">
 			<div class="header__logo">
 				<a class="header__link" href="index.html" target="_self">
-					<img class="header__img" src="img/main-logo.svg" alt="Nickelodeon" />
+					<img class="header__img" src="img/logo.svg" alt="Nickelodeon" />
 				</a>
 			</div>
 			<!--Верхнее меню-->
@@ -76,31 +76,47 @@
 		</header>
 		<!--Page main part-->
 		<main class="main">
-			<h1 class="main__title">Ваши любимые герои<br />
-				<span class="main__title--big">на большом экране</span><br />
-				<span class="main__title--highlight">с 4 апреля</span>
-			</h1>
+			<!--Левый блок с логотипами-->
+			<div class="main__left left">
+				<div class="left__wrap left__wrap--up">
+					<img class="left__image" src="img/first-img.svg" alt="Additional image" />
+				</div>
+				<div class="left__wrap left__wrap--down">
+					<img class="left__image" src="img/second-img.svg" alt="Additional image" />
+				</div>
+			</div>
 			<!--Блок с отсчетом времени, он же ШАГ 1-->
 			<section class="main__time time">
-				<h2 class="time__title">До кинопоказа в <span class="time__city" id="city-moscow">Москве</span>:</h2>
+				<h1 class="time__title">Ваши любимые герои<br />
+					<span class="time__title--big">на большом экране</span><br />
+					<span class="time__title--highlight">с 4 апреля</span>
+				</h1>
+				<h2 class="time__subtitle">До кинопоказа в <span class="time__city" id="city-moscow">Москве</span>:</h2>
 				<ul class="time__list time-list">
 					<li class="time-list__item time-list__item--days">
-						<b class="time-list__counter"></b>
+						<b class="time-list__counter">00</b>
 						<span class="time-list__name">дней</span>
 					</li>
 					<li class="time-list__item time-list__item--hours">
-						<b class="time-list__counter"></b>
+						<b class="time-list__counter">00</b>
 						<span class="time-list__name">часов</span>
 					</li>
 					<li class="time-list__item time-list__item--minutes">
-						<b class="time-list__counter"></b>
+						<b class="time-list__counter">00</b>
 						<span class="time-list__name">минут</span>
 					</li>
 					<li class="time-list__item time-list__item--seconds">
-						<b class="time-list__counter"></b>
+						<b class="time-list__counter">00</b>
 						<span class="time-list__name">секунд</span>
 					</li>
 				</ul>
+				<!--Кнопки-->
+				<div class="main__controls controls">
+					<button class="controls__event" type="button">Хочу билет</button>
+					<a class="controls__more" href="about.html">
+						<span class="controls__text">Узнать больше</span>
+					</a>
+				</div>
 			</section>
 			<!--Блок со вторым шагом, активен по клику на кнопку "Хочу билет"-->
 			<section class="main__event event" style="display: none;">
@@ -134,10 +150,14 @@
 					<button class="form-event__submit" type="submit">Отправить!</button>
 				</form>
 			</section>
-			<!--Кнопки-->
-			<div class="main__controls controls">
-				<button class="controls__event" type="button">Хочу билет</button>
-				<a class="controls__more" href="about.html">Узнать больше</a>
+			<!--Правый блок с логотипами-->
+			<div class="main__right right">
+				<div class="right__wrap right__wrap--up">
+					<img class="right__image" src="img/third-img.svg" alt="Additional image" />
+				</div>
+				<div class="right__wrap right__wrap--down">
+					<img class="right__image" src="img/fourth-img.svg" alt="Additional image" />
+				</div>
 			</div>
 		</main>
 		<!--Page footer-->

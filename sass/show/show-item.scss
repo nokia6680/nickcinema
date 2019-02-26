@@ -1,0 +1,48 @@
+.show-item {
+  width: 100%;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__title {
+    font: {
+      size: 3.438em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__frame {
+    max-width: 495px;
+    max-height: 550px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__description {
+    font: {
+      size: 1.375em;
+      family: $regular-font;
+    }
+
+    color: $text-white;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    display: block;
+    max-width: 500px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 860px;
+
+  &__title {
+    display: block;
+    width: 880px;
+
+    font: {
+      size: 4.875em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    &--big {
+      font: {
+        size: 86.2px;
+      }
+    }
+
+    &--highlight {
+      font: {
+        size: 77.5px;
+      }
+
+      color: $text-yellow;
+    }
+  }
+
+  &__subtitle {
+    font: {
+      size: 2.55em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 0;
+  }
+}

@@ -33,32 +33,25 @@ body {
   text-transform: uppercase;
 }
 
-.body-index {
+.body--index {
   background-color: $bg-body;
-  background-image: url('../img/index-bg.jpg');
+  background-image: url('../img/bg-index.jpg');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 
-.body-tip {
+.body--show {
   background-color: $bg-body;
-  background-image: url('../img/tip-bg.jpg');
+  background-image: url('../img/bg-show.jpg');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 
-.body-event {
+.body--about {
   background-color: $bg-body;
-  background-image: url('../img/event-bg.jpg');
+  background-image: url('../img/bg-about.jpg');
   background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.body-gallery {
-  background-color: $bg-body;
-  background-image: url('../img/gallery-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 
 img {

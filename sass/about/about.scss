@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 860px;
+
+  &__title {
+    display: block;
+    width: 880px;
+
+    font: {
+      size: 4.5em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    font: {
+      size: 1.375em;
+      family: $regular-font;
+      weight: 300;
+    }
+
+    color: $text-white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: left;
+
+    margin-top: 0;
+
+    &--first {
+      margin-bottom: 20px;
+    }
+
+    &--second {
+      margin-bottom: 50px;
+    }
+
+    &--third {
+      margin: 0;
+    }
+  }
+}
