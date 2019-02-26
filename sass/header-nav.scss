@@ -3,7 +3,59 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  flex-wrap: nowrap;
 
-  padding-top: 24px;
+  z-index: 97;
+
+  &__opener {
+    display: block;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    min-width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    outline: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='124px' height='124px' fill='%23ffffff' viewBox='0 0 124 124' style='enable-background:new 0 0 124 124;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z'/%3E%3Cpath d='M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z'/%3E%3Cpath d='M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 24px 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .header-nav {
+    &__opener {
+      min-width: 77px;
+      height: 77px;
+
+      background-size: 48px 43px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .header-nav {
+    padding-top: 24px;
+
+    &__opener {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .header-nav {
+    padding-top: 24px;
+
+    &__opener {
+      display: none;
+    }
+  }
 }

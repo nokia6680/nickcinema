@@ -1,5 +1,5 @@
 .left {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -39,5 +39,55 @@
   &__image {
     width: 100%;
     height: auto;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 380px;
+    margin-right: 40px;
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--up {
+        min-width: 300px;
+        min-height: 352px;
+      }
+
+      &--upabout {
+        min-width: 310px;
+        min-height: 373px;
+
+        margin-bottom: 20px;
+      }
+
+      &--down {
+        min-width: 330px;
+        min-height: 369px;
+      }
+
+      &--downabout {
+        min-width: 351px;
+        min-height: 351px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
   }
 }

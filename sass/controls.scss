@@ -16,8 +16,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 394px;
-    height: 72px;
+    width: 300px;
+    height: 60px;
 
     text-decoration: none;
 
@@ -60,7 +60,7 @@
 
   &__text {
     font: {
-      size: 2.5em;
+      size: 1.75em;
       family: $bold-font;
     }
 
@@ -69,5 +69,30 @@
 
     padding-left: 50px;
     padding-top: 8px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .controls {
+    &__more {
+      width: 394px;
+      height: 72px;
+    }
+
+    &__text {
+      font: {
+        size: 2.375em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .controls {
+    &__text {
+      font: {
+        size: 2.5em;
+      }
+    }
   }
 }

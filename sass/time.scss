@@ -4,14 +4,14 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 860px;
+  width: 300px;
 
   &__title {
     display: block;
-    width: 880px;
+    width: 300px;
 
     font: {
-      size: 4.875em;
+      size: 1.5em;
       family: $bold-font;
     }
 
@@ -20,18 +20,18 @@
     text-transform: uppercase;
     text-align: center;
 
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 
     &--big {
       font: {
-        size: 86.2px;
+        size: 28px;
       }
     }
 
     &--highlight {
       font: {
-        size: 77.5px;
+        size: 24px;
       }
 
       color: $text-yellow;
@@ -40,7 +40,7 @@
 
   &__subtitle {
     font: {
-      size: 2.55em;
+      size: 1em;
       family: $bold-font;
     }
 
@@ -50,5 +50,117 @@
     text-align: center;
 
     margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .time {
+    width: 394px;
+
+    &__title {
+      width: 394px;
+
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 30px;
+
+      &--big {
+        font: {
+          size: 32px;
+        }
+      }
+
+      &--highlight {
+        font: {
+          size: 28px;
+        }
+      }
+    }
+
+    &__subtitle {
+      font: {
+        size: 1.5em;
+      }
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .time {
+    width: 680px;
+
+    &__title {
+      width: 680px;
+
+      font: {
+        size: 3.5em;
+      }
+
+      margin-bottom: 10px;
+
+      &--big {
+        font: {
+          size: 62.7px;
+        }
+      }
+
+      &--highlight {
+        font: {
+          size: 56px;
+        }
+      }
+    }
+
+    &__subtitle {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .time {
+    width: 860px;
+
+    &__title {
+      width: 880px;
+
+      font: {
+        size: 4.875em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      &--big {
+        font: {
+          size: 86.2px;
+        }
+      }
+
+      &--highlight {
+        font: {
+          size: 77.5px;
+        }
+      }
+    }
+
+    &__subtitle {
+      font: {
+        size: 2.55em;
+      }
+    }
   }
 }

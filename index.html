@@ -31,6 +31,7 @@
 				</a>
 			</div>
 			<!--Верхнее меню-->
+			<button class="header__closer" type="button"></button>
 			<div class="header__controls">
 				<!--Кнопки-->
 				<nav class="header__nav header-nav">
@@ -61,6 +62,7 @@
 							</a>
 						</li>
 					</ul>
+					<button class="header-nav__opener" type="button"></button>
 				</nav>
 				<!--Выбор города-->
 				<div class="header__city city">
@@ -91,22 +93,34 @@
 					<span class="time__title--big">на большом экране</span><br />
 					<span class="time__title--highlight">с 4 апреля</span>
 				</h1>
+				<!--Только для мобильной-планшетной версий-->
+				<div class="time__center center">
+					<div class="center__wrap center__wrap--left">
+						<img class="center__image" src="img/left-img.png" alt="Additional image" />
+					</div>
+					<div class="center__wrap center__wrap--center">
+						<img class="center__image" src="img/center-img.png" alt="Additional image" />
+					</div>
+					<div class="center__wrap center__wrap--right">
+						<img class="center__image" src="img/right-img.png" alt="Additional image" />
+					</div>
+				</div>
 				<h2 class="time__subtitle">До кинопоказа в <span class="time__city" id="city-moscow">Москве</span>:</h2>
-				<ul class="time__list time-list">
+				<ul class="time__list time-list" id="time-list">
 					<li class="time-list__item time-list__item--days">
-						<b class="time-list__counter">00</b>
+						<b class="time-list__counter time-list__counter--days days">00</b>
 						<span class="time-list__name">дней</span>
 					</li>
 					<li class="time-list__item time-list__item--hours">
-						<b class="time-list__counter">00</b>
+						<b class="time-list__counter time-list__counter--hours hours">00</b>
 						<span class="time-list__name">часов</span>
 					</li>
 					<li class="time-list__item time-list__item--minutes">
-						<b class="time-list__counter">00</b>
+						<b class="time-list__counter time-list__counter--minutes minutes">00</b>
 						<span class="time-list__name">минут</span>
 					</li>
 					<li class="time-list__item time-list__item--seconds">
-						<b class="time-list__counter">00</b>
+						<b class="time-list__counter time-list__counter--seconds seconds">00</b>
 						<span class="time-list__name">секунд</span>
 					</li>
 				</ul>
