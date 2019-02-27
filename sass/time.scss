@@ -127,7 +127,44 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .time {
+    width: 640px;
 
+    &__title {
+      width: 640px;
+
+      font: {
+        size: 56px;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      &--big {
+        font: {
+          size: 63px;
+        }
+      }
+
+      &--highlight {
+        display: block;
+
+        font: {
+          size: 56px;
+        }
+
+        margin-bottom: 15px;
+      }
+    }
+
+    &__subtitle {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {

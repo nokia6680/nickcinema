@@ -169,7 +169,7 @@
 
     .next-1 {
       width: 52px;
-      height: 59px;;
+      height: 59px;
 
       top: 35%;
       right: 10px;
@@ -180,132 +180,59 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .show-slider {
+    .slick-dots {
+      bottom: 165px;
+    }
+    /*Кнопки*/
+    .prev-1 {
+      width: 38px;
+      height: 43px;
 
+      top: 35%;
+      left: 120px;
+
+      background-size: 38px 43px;
+    }
+
+    .next-1 {
+      width: 38px;
+      height: 43px;
+
+      top: 35%;
+      right: 120px;
+
+      background-size: 38px 43px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .show-slider {
-    width: 100%;
-
-    margin: 0 auto;
-
-    position: relative;
-
-    &:not(.slick-initialized) {
-      visibility: hidden;
-    }
-
     .slick-dots {
-      display: flex !important;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
       width: 200px;
-
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      position: absolute;
-
       bottom: 155px;
-      left: 50%;
-      transform: translateX(-50%);
-
-      li {
-        margin: 0 0.5rem;
-      }
-
-      button {
-        display: block;
-        width: 16px;
-        height: 16px;
-        padding: 0;
-        border: none;
-        border-radius: 100%;
-        background-color: #ffffff;
-        text-indent: -9999px;
-
-        cursor: pointer;
-        outline: none;
-      }
-
-      li.slick-active button {
-        background-color: transparent;
-        position: relative;
-        width: 16px;
-        height: 16px;
-        background-color: #ffffff;
-
-        cursor: pointer;
-        outline: none;
-
-        &::before {
-          position: absolute;
-          content: '';
-
-          width: 26px;
-          height: 26px;
-
-          border: 2px solid #ffffff;
-
-          top: 50%;
-          left: 50%;
-
-          transform: translate(-50%, -50%);
-
-          background-color: transparent;
-          border-radius: 50%;
-        }
-      }
     }
 
     /*Кнопки*/
     .prev-1 {
-      position: absolute;
-
       width: 50px;
       height: 57px;
-
-      border: none;
-
-      z-index: 10;
 
       top: 40%;
       left: 70px;
 
-      background-image: url('../img/arrow-left.png');
       background-size: 50px 57px;
-      background-repeat: no-repeat;
-
-      transition: 0.2s ease-in;
-
-      cursor: pointer;
-      outline: none;
     }
 
     .next-1 {
-      position: absolute;
-
       width: 50px;
       height: 57px;
-
-      border: none;
-
-      z-index: 10;
 
       top: 40%;
       right: 70px;
 
-      background-image: url('../img/arrow-right.png');
       background-size: 50px 57px;
-      background-repeat: no-repeat;
-
-      transition: 0.2s ease-in;
-
-      cursor: pointer;
-      outline: none;
     }
   }
 }

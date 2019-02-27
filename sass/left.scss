@@ -43,7 +43,49 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+    width: 320px;
+    margin-right: 0px;
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--up {
+        min-width: 242px;
+        min-height: 278px;
+      }
+
+      &--upabout {
+        min-width: 257px;
+        min-height: 306px;
+
+        margin-bottom: 20px;
+      }
+
+      &--down {
+        min-width: 282px;
+        min-height: 316px;
+      }
+
+      &--downabout {
+        min-width: 271px;
+        min-height: 271px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {

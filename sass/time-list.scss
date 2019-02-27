@@ -93,7 +93,30 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .time-list {
+    margin-bottom: 40px;
 
+    &__item {
+      width: 134px;
+      height: 134px;
+
+      &:not(:last-of-type) {
+        margin-right: 15px;
+      }
+    }
+
+    &__counter {
+      font: {
+        size: 84px;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 21px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {

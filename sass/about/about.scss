@@ -162,16 +162,49 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .about {
+    width: 600px;
 
+    &__title {
+      width: 600px;
+
+      font: {
+        size: 53px;
+      }
+
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &__description {
+      width: 600px;
+
+      font: {
+        size: 1em;
+      }
+
+      &--first {
+        margin-bottom: 30px;
+      }
+
+      &--second {
+        margin-bottom: 40px;
+
+        &::after {
+          width: 139px;
+          height: 16px;
+
+          background-size: 139px 16px;
+
+          bottom: -27px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
     width: 860px;
 
     &__title {
@@ -179,12 +212,8 @@
 
       font: {
         size: 4em;
-        family: $bold-font;
       }
 
-      color: $text-white;
-      line-height: 1;
-      text-transform: uppercase;
       text-align: center;
 
       margin-top: 0;
@@ -192,20 +221,13 @@
     }
 
     &__description {
-      display: block;
       width: 810px;
 
       font: {
         size: 1.375em;
-        family: $regular-font;
-        weight: 300;
       }
 
-      color: $text-white;
       line-height: 1.2;
-      text-transform: uppercase;
-      text-align: left;
-
       margin-top: 0;
 
       &--first {
@@ -215,19 +237,11 @@
       &--second {
         margin-bottom: 50px;
 
-        position: relative;
-
         &::after {
-          position: absolute;
-          content: '';
-
           width: 186px;
           height: 22px;
 
-          background-image: url('../img/star.png');
-          background-repeat: no-repeat;
           background-size: 186px 22px;
-          background-position: left center;
 
           bottom: -30px;
           left: 50%;

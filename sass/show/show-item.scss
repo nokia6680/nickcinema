@@ -502,7 +502,132 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .show-item {
+    width: 100% !important;
+    display: flex !important;
 
+    &__title {
+      font: {
+        size: 2em;
+      }
+
+      margin-top: 0px;
+      margin-bottom: 47px;
+
+      &--nella {
+        margin-bottom: 47px;
+      }
+
+      &--blaze {
+        margin-bottom: 47px;
+      }
+    }
+
+    &__frame {
+      max-width: 307px;
+      max-height: 307px;
+      min-width: 307px;
+      min-height: 307px;
+
+      &::before {
+        width: 216px;
+        height: 216px;
+      }
+
+      &--one {
+        &::after {
+          top: -34px;
+
+          width: 366px;
+          height: 289px;
+
+          background-size: 366px 289px;
+        }
+      }
+
+      &--two {
+        &::after {
+          top: -29px;
+
+          width: 232px;
+          height: 283px;
+
+          background-size: 232px 283px;
+        }
+      }
+
+      &--three {
+        &::after {
+          top: -23px;
+
+          width: 190px;
+          height: 276px;
+
+          background-size: 190px 276px;
+        }
+      }
+
+      &--four {
+        &::after {
+          top: -38px;
+          right: -7px;
+
+          width: 307px;
+          height: 358px;
+
+          background-size: 307px 358px;
+        }
+      }
+
+      &--five {
+        &::after {
+          top: -69px;
+          left: -32px;
+
+          width: 283px;
+          height: 369px;
+
+          background-size: 283px 369px;
+        }
+      }
+
+      &--six {
+        &::after {
+          top: 35px;
+          left: 42px;
+
+          width: 305px;
+          height: 247px;
+
+          background-size: 305px 247px;
+        }
+      }
+
+      &--seven {
+        &::after {
+          top: -25px;
+          left: -40px;
+
+          width: 370px;
+          height: 277px;
+
+          background-size: 370px 277px;
+        }
+      }
+    }
+
+    &__description {
+      font: {
+        size: 1em;
+      }
+
+      max-width: 380px;
+      text-align: center;
+
+      margin-bottom: 0;
+      margin-top: 40px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop-wide) {
