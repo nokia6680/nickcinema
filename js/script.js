@@ -2,7 +2,7 @@
 var menuMobile = document.querySelector(".nav-list");
 var headerMobile = document.querySelector(".header");
 var openButton = document.querySelectorAll(".header-nav__opener");
-var closeButton = document.querySelectorAll(".header__closer")
+var closeButton = document.querySelector(".header__closer")
 
 if (menuMobile) {
   for (var i = 0; i < openButton.length; i++) openButton[i].addEventListener("click", function(event) {
@@ -18,6 +18,11 @@ if (menuMobile) {
 
   menuMobile.addEventListener("click", function(event) {
     event.stopPropagation();
+  });
+
+  closeButton.addEventListener("click", function() {
+    menuMobile.classList.remove("nav-list--active");
+    headerMobile.classList.remove("header--active");
   });
 
   window.addEventListener("keydown", function(event) {

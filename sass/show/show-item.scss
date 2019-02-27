@@ -372,7 +372,133 @@
 }
 
 @media only screen and (min-width: $tablet) {
+  .show-item {
+    width: 100% !important;
+    display: flex !important;
 
+    &__title {
+      font: {
+        size: 3em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 80px;
+
+      &--nella {
+        margin-bottom: 80px;
+      }
+
+      &--blaze {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__frame {
+      min-width: 470px;
+      max-width: 470px;
+      max-height: 470px;
+      min-height: 470px;
+
+      &::before {
+        width: 310px;
+        height: 310px;
+      }
+
+      &--one {
+        &::after {
+          top: -57px;
+
+          width: 560px;
+          height: 441px;
+
+          background-size: 560px 441px;
+        }
+      }
+
+      &--two {
+        &::after {
+          top: -53px;
+
+          width: 355px;
+          height: 436px;
+
+          background-size: 355px 436px;
+        }
+      }
+
+      &--three {
+        &::after {
+          top: -46px;
+
+          width: 294px;
+          height: 426px;
+
+          background-size: 294px 426px;
+        }
+      }
+
+      &--four {
+        &::after {
+          top: -45px;
+          right: -15px;
+
+          width: 454px;
+          height: 545px;
+
+          background-size: 454px 545px;
+        }
+      }
+
+      &--five {
+        &::after {
+          top: -136px;
+          left: -77px;
+
+          width: 457px;
+          height: 594px;
+
+          background-size: 457px 594px;
+        }
+      }
+
+      &--six {
+        &::after {
+          top: 45px;
+          left: 70px;
+
+          width: 467px;
+          height: 380px;
+
+          background-size: 467px 380px;
+        }
+      }
+
+      &--seven {
+        &::after {
+          top: -45px;
+          left: -63px;
+
+          width: 568px;
+          height: 425px;
+
+          background-size: 568px 425px;
+        }
+      }
+    }
+
+    &__description {
+      font: {
+        size: 1.75em;
+      }
+
+      max-width: 480px;
+      line-height: 1.2;
+      text-align: center;
+
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {

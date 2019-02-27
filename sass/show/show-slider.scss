@@ -152,7 +152,31 @@
 }
 
 @media only screen and (min-width: $tablet) {
+  .show-slider {
+    .slick-dots {
+      bottom: 370px;
+    }
+    /*Кнопки*/
+    .prev-1 {
+      width: 52px;
+      height: 59px;
 
+      top: 35%;
+      left: 10px;
+
+      background-size: 52px 59px;
+    }
+
+    .next-1 {
+      width: 52px;
+      height: 59px;;
+
+      top: 35%;
+      right: 10px;
+
+      background-size: 52px 59px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
