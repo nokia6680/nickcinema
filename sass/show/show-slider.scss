@@ -23,7 +23,7 @@
 
     position: absolute;
 
-    bottom: 132px;
+    top: 309px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -126,7 +126,7 @@
 @media only screen and (min-width: 414px) {
   .show-slider {
     .slick-dots {
-      bottom: 160px;
+      top: 496px;
     }
     /*Кнопки*/
     .prev-1 {
@@ -154,7 +154,7 @@
 @media only screen and (min-width: $tablet) {
   .show-slider {
     .slick-dots {
-      bottom: 370px;
+      top: 648px;
     }
     /*Кнопки*/
     .prev-1 {
@@ -182,7 +182,7 @@
 @media only screen and (min-width: $laptop) {
   .show-slider {
     .slick-dots {
-      bottom: 165px;
+      top: 416px;
     }
     /*Кнопки*/
     .prev-1 {
@@ -210,8 +210,7 @@
 @media only screen and (min-width: $laptop-wide) {
   .show-slider {
     .slick-dots {
-      width: 200px;
-      bottom: 155px;
+      top: 555px;
     }
 
     /*Кнопки*/
