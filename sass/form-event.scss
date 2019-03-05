@@ -1,0 +1,76 @@
+.form-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: $bg-white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  width: 260px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  &__submit {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 35px;
+
+    background: rgba(254,112,17,1);
+    background: -moz-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,112,17,1)), color-stop(100%, rgba(221,89,1,1)));
+    background: -webkit-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7011', endColorstr='#dd5901', GradientType=0 );
+
+    width: 150px;
+    height: 27px;
+
+    padding-top: 4px;
+
+    cursor: pointer;
+    outline: none;
+
+    font: {
+      size: 1em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .form-event {
+    width: 340px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    &__submit {
+      width: 200px;
+      height: 40px;
+
+      padding-top: 4px;
+
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}

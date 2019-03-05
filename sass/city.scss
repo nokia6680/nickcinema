@@ -1,0 +1,44 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  &__btn {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background-image: url('../img/pin.png');
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font: {
+      family: $bold-font;
+      size: 0.625em;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__change {
+    display: none;
+  }
+}

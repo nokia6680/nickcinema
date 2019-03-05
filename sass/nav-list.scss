@@ -12,6 +12,9 @@
 
   background-color: rgba(255, 255, 255, 0.9);
 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   box-shadow:0px 4px 10px 0px rgba(0,0,0,0.2)inset;
   -webkit-box-shadow:0px 4px 10px 0px rgba(0,0,0,0.2)inset;
   -moz-box-shadow:0px 4px 10px 0px rgba(0,0,0,0.2)inset;
@@ -23,7 +26,7 @@
   transition: 0.3s ease-in-out;
 
   &--active {
-    top: 91px;
+    top: 75px;
     transition: 0.3s ease-in-out;
   }
 
@@ -37,15 +40,28 @@
     border-bottom: 2px solid #ffffff;
 
     &--ticket {
-      display: none;
+      order: 5;
+      border-bottom: none;
+
+      background-color: $menu-ticket;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 
     &--schedule {
-      display: none;
+      order: 1;
     }
 
     &--rules {
-      display: none;
+      order: 4;
+    }
+
+    &--about {
+      order: 2;
+    }
+
+    &--show {
+      order: 3;
     }
   }
 
@@ -62,6 +78,28 @@
 
     cursor: pointer;
     outline: none;
+
+    &--ticket {
+      padding-left: 33px;
+
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content:'';
+
+        background-image: url('../img/cart.png');
+        background-size: 33px 32px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        width: 33px;
+        height: 32px;
+
+        top: -2px;
+        left: 15px;
+      }
+    }
   }
 
   &__text {
@@ -79,6 +117,10 @@
     text-align: left;
 
     padding-left: 20px;
+
+    &--ticket {
+      color: $text-white;
+    }
   }
 }
 

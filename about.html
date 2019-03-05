@@ -34,12 +34,14 @@
 			<!--Верхнее меню-->
 			<button class="header__closer" type="button"></button>
 			<div class="header__controls">
+				<!--Кнопка покупки билета-->
+				<a class="header__ticket" href="#" target="_blank"></a>
 				<!--Кнопки-->
 				<nav class="header__nav header-nav">
 					<ul class="header-nav__list nav-list">
 						<li class="nav-list__item nav-list__item--ticket">
-							<a class="nav-list__link" href="#" target="_self">
-								<span class="nav-list__text">Купить билет</span>
+							<a class="nav-list__link nav-list__link--ticket" href="#" target="_self">
+								<span class="nav-list__text nav-list__text--ticket">Купить билет</span>
 							</a>
 						</li>
 						<li class="nav-list__item nav-list__item--schedule">
@@ -47,12 +49,12 @@
 								<span class="nav-list__text">Расписание</span>
 							</a>
 						</li>
-						<li class="nav-list__item">
+						<li class="nav-list__item nav-list__item--about">
 							<a class="nav-list__link" href="about.html" target="_self">
 								<span class="nav-list__text">О проекте</span>
 							</a>
 						</li>
-						<li class="nav-list__item">
+						<li class="nav-list__item nav-list__item--show">
 							<a class="nav-list__link" href="show.html" target="_self">
 								<span class="nav-list__text">Шоу</span>
 							</a>
@@ -67,9 +69,7 @@
 				</nav>
 				<!--Выбор города-->
 				<div class="header__city city">
-					<div class="city__frame">
-						<img class="city__pin" src="img/pin.svg" alt="Местоположение" />
-					</div>
+					<button class="city__btn" type="button"></button>
 					<div class="city__details">
 						<b class="city__name">Москва</b>
 						<button class="city__change" type="button">Выбрать другой</button>

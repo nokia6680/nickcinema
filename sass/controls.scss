@@ -7,7 +7,43 @@
   align-items: center;
 
   &__event {
-    display: none;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 188px;
+    height: 45px;
+
+    border-radius: 35px;
+    border: none;
+
+    margin-bottom: 15px;
+    padding-top: 4px;
+
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+
+    background: rgba(254,112,17,1);
+    background: -moz-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,112,17,1)), color-stop(100%, rgba(221,89,1,1)));
+    background: -webkit-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,112,17,1) 0%, rgba(221,89,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7011', endColorstr='#dd5901', GradientType=0 );
+
+    font: {
+      size: 1.625em;
+      family: $bold-font;
+    }
+
+    color: $text-white;
+    text-transform: uppercase;
+    line-height: 1;
+
   }
 
   &__more {
@@ -16,8 +52,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 300px;
-    height: 60px;
+    width: 188px;
+    height: 35px;
 
     text-decoration: none;
 
@@ -31,7 +67,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31bdc7', endColorstr='#15a2af', GradientType=0 );
 
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
 
     position: relative;
 
@@ -43,13 +79,13 @@
       position: absolute;
       content: '';
 
-      width: 48px;
-      height: 49px;
+      width: 24px;
+      height: 24.5px;
 
       background-image: url('../img/question.png');
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 48px 49px;
+      background-size: 24px 24.5px;
 
       top: 50%;
       left: 10px;
@@ -60,15 +96,15 @@
 
   &__text {
     font: {
-      size: 1.75em;
+      size: 1.125em;
       family: $bold-font;
     }
 
     color: $text-white;
     line-height: 1;
 
-    padding-left: 50px;
-    padding-top: 8px;
+    padding-left: 30px;
+    padding-top: 3px;
   }
 }
 
