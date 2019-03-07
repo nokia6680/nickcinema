@@ -14,6 +14,12 @@
   padding-bottom: 10px;
   padding-top: 10px;
 
+  box-shadow: 0px 1px 20px 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 20px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 20px 6px rgba(0,0,0,0.2);
+
+  z-index: 2;
+
   &__submit {
     align-self: center;
 
@@ -70,6 +76,85 @@
 
       font: {
         size: 1.25em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $tablet) {
+  .form-event {
+    width: 544px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    margin-bottom: 20px;
+
+    &__submit {
+      width: 226px;
+      height: 55px;
+
+      padding-top: 6px;
+
+      font: {
+        size: 2.125em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .form-event {
+    width: 378px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    margin-bottom: 20px;
+
+    &__submit {
+      width: 157px;
+      height: 39px;
+
+      padding-top: 4px;
+
+      font: {
+        size: 1.444em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .form-event {
+    width: 522px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    margin-bottom: 10px;
+
+    &__submit {
+      width: 217px;
+      height: 48px;
+
+      padding-top: 8px;
+
+      font: {
+        size: 1.875em;
       }
     }
   }

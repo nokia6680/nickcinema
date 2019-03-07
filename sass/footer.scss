@@ -55,10 +55,6 @@
 }
 
 @media only screen and (min-width: $laptop) {
-
-}
-
-@media only screen and (min-width: $laptop-wide) {
   .footer {
     width: 100%;
 
@@ -78,8 +74,6 @@
     position: relative;
 
     &__wrapper {
-      @include container;
-
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -87,6 +81,7 @@
     }
 
     &__copyright {
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -103,6 +98,8 @@
       opacity: 0.3;
       line-height: 1;
       text-transform: uppercase;
+
+      margin-right: 20px;
     }
   }
 }

@@ -8,7 +8,6 @@
 
   &__event {
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -111,20 +110,127 @@
 @media only screen and (min-width: $tablet) {
   .controls {
     &__more {
-      width: 394px;
-      height: 72px;
+      width: 377px;
+      height: 69px;
+
+      border-radius: 40px;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 48px;
+        height: 49px;
+
+        background-image: url('../img/question.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 48px 49px;
+
+        top: 50%;
+        left: 10px;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    &__event {
+      width: 377px;
+      height: 91px;
+
+      margin-bottom: 35px;
+      padding-top: 4px;
+
+      border-radius: 50px;
+
+      font: {
+        size: 3.238em;
+      }
     }
 
     &__text {
       font: {
-        size: 2.375em;
+        size: 2.394em;
       }
+
+      padding-left: 35px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .controls {
+    &__more {
+      width: 283px;
+      height: 52px;
+
+      border-radius: 40px;
+
+      &::after {
+        width: 35px;
+        height: 35px;
+
+        background-size: 35px 35px;
+        left: 10px;
+      }
+    }
+
+    &__event {
+      width: 283px;
+      height: 69px;
+
+      margin-bottom: 20px;
+      padding-top: 4px;
+
+      border-radius: 50px;
+
+      font: {
+        size: 2.441em;
+      }
+    }
+
+    &__text {
+      font: {
+        size: 1.804em;
+      }
+
+      padding-left: 30px;
     }
   }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .controls {
+    &__more {
+      width: 393px;
+      height: 72px;
+
+      border-radius: 40px;
+      padding-top: 8px;
+
+      &::after {
+        width: 48px;
+        height: 48px;
+
+        background-size: 48px 48px;
+        left: 10px;
+      }
+    }
+
+    &__event {
+      width: 393px;
+      height: 95px;
+
+      margin-bottom: 20px;
+      padding-top: 8px;
+
+      border-radius: 50px;
+
+      font: {
+        size: 3.382em;
+      }
+    }
+
     &__text {
       font: {
         size: 2.5em;

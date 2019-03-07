@@ -66,14 +66,14 @@
 					</ul>
 					<button class="header-nav__opener" type="button"></button>
 				</nav>
-				<!--Выбор города-->
-				<div class="header__city city">
+				<!--
+				<div class="header__city city" style="display: none;">
 					<button class="city__btn" type="button"></button>
 					<div class="city__details">
 						<b class="city__name">Москва</b>
 						<button class="city__change" type="button">Выбрать другой</button>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</header>
 		<!--Page main part-->
@@ -135,9 +135,11 @@
 			<!--Блок со вторым шагом, активен по клику на кнопку "Хочу билет"-->
 			<section class="main__event event">
 				<h2 class="event__title">Досмотри трейлер до конца, укажи свой e-mail и номер телефона, и получи возможность выиграть билеты в кино.</h2>
+				<div class="event__play">
 				<div class="event__wrap">
 					<iframe class="event__video" src="https://www.youtube.com/embed/tl-M6AYS-tI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
+			</div>
 				<form class="event__form form-event">
 					<ul class="form-event__list form-list">
 						<li class="form-list__item">
@@ -201,49 +203,6 @@
 					<i class="fab fa-facebook-f"></i>
 				</button>
 			</div>
-		</div>
-	</div>
-	<!--Подтверждение города-->
-	<div class="popup-city" style="display: none;">
-		<div class="popup-city__wrapper">
-			<button class="popup-city__close" type="button"></button>
-			<h2 class="popup-city__title">Ваш город</h2>
-			<b class="popup-city__name" id="city-1">Новосибирск?</b>
-			<div class="popup-city__controls">
-				<button class="popup-city__btn popup-city__btn--no" type="button">Нет</button>
-				<button class="popup-city__btn popup-city__btn--yes" type="button">Да</button>
-			</div>
-		</div>
-	</div>
-	<!--Выбор города из списка-->
-	<div class="popup-choose" style="display: none;">
-		<div class="popup-choose__wrapper">
-			<p class="popup-choose__title">Выберите ваш город:</p>
-			<div class="popup-choose__slider popup-slider">
-				<!--Слайд н1-->
-				<div class="popup-slider__item">
-					<ul class="popup-slider__list">
-						<li class="popup-slider__city">
-							<span class="popup-slider__name">Санкт-Петербург</span>
-						</li>
-						<li class="popup-slider__city">
-							<span class="popup-slider__name">Волгоград</span>
-						</li>
-						<li class="popup-slider__city">
-							<span class="popup-slider__name">Екатеринбург</span>
-						</li>
-						<li class="popup-slider__city">
-							<span class="popup-slider__name">Краснодар</span>
-						</li>
-						<li class="popup-slider__city">
-							<span class="popup-slider__name">Другое</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Add Arrows -->
-			<div class="prev-2"></div>
-			<div class="next-2"></div>
 		</div>
 	</div>
 	<script src="js/script.js"></script>
