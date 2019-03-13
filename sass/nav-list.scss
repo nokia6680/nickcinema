@@ -28,6 +28,21 @@
   &--active {
     top: 75px;
     transition: 0.3s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 100vw;
+      height: 100vh;
+
+      top: 0;
+      left: 0;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      z-index: -1;
+    }
   }
 
   &__item {
@@ -37,15 +52,17 @@
     padding-top: 8px;
     padding-bottom: 5px;
 
-    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &--ticket {
       order: 5;
-      border-bottom: none;
 
       background-color: $menu-ticket;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+
+      display: none;
     }
 
     &--schedule {
@@ -59,6 +76,7 @@
 
     &--about {
       order: 2;
+      border-top: none;
     }
 
     &--show {
@@ -172,6 +190,8 @@
       padding-left: 0;
       margin-left: 25px;
       padding-top: 8px;
+
+      border-top: none;
 
       &--ticket {
         order: 1;

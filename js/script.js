@@ -85,10 +85,27 @@ function initializeClock(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
+    var daysNum = document.getElementById('daysNum');
+    var hoursNum = document.getElementById('hoursNum');
+    var minutesNum = document.getElementById('minutesNum');
+    var secondsNum = document.getElementById('secondsNum');
+
+    function getLast(number, titles) {
+      var cases = [2, 0, 1, 1, 1, 2];
+      return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5?number%10:5)]];
+    }
+
     daysSpan.innerHTML = t.days;
+    document.getElementById('daysNum').innerHTML = getLast(t.days, ['день', 'дня', 'дней']);
+
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    document.getElementById('hoursNum').innerHTML = getLast(t.hours, ['час', 'часа', 'часов']);
+
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    document.getElementById('minutesNum').innerHTML = getLast(t.minutes, ['минута', 'минуты', 'минут']);
+
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    document.getElementById('secondsNum').innerHTML = getLast(t.seconds, ['секунда', 'секунды', 'секунд']);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);

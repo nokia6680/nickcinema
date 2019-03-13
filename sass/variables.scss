@@ -28,7 +28,7 @@ $pattern-list-bg: #ea5b0a;
 
 $light-font: "Gotham Extra Light", sans-serif;
 $regular-font: "Arista-regular", sans-serif;
-$bold-font: "Arista-fat", sans-serif;
+$bold-font: "arista_pro", sans-serif;
 
 $base-font-color: #000;
 $base-font-size: 16px;
@@ -36,3 +36,8 @@ $base-font-weight: normal;
 
 $baseFontColor: $text-black;
 $baseFontFamily: $regular-font;
+
+$fm-capitalHeight: 1.327;
+$fm-descender: 0.41;
+$fm-ascender: 1.638;
+$fm-linegap: 0;

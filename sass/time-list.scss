@@ -30,26 +30,28 @@
 
   &__counter {
     text-align: center;
+    vertical-align: middle;
 
     font: {
       size: 40px;
       family: $bold-font;
+      weight: 600;
     }
 
     color: $text-white;
-    line-height: 1;
 
-    margin-bottom: 0;
+    margin: 0;
+    text-transform: uppercase;
   }
 
   &__name {
     font: {
-      size: 16px;
+      size: 14px;
       family: $bold-font;
+      weight: 600;
     }
 
     color: $text-white;
-    line-height: 1;
     text-transform: uppercase;
   }
 }

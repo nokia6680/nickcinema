@@ -24,7 +24,7 @@
 <body class="body--index">
 	<div class="wrapper">
 		<!--Page header-->
-		<header class="header">
+		<header class="header" id="parent">
 			<div class="header__logo">
 				<a class="header__link" href="index.html" target="_self">
 					<img class="header__img" src="img/logo.svg" alt="Nickelodeon" />
@@ -88,52 +88,51 @@
 				</div>
 			</div>
 			<!--Блок с отсчетом времени, он же ШАГ 1-->
-			<section class="main__time time" style="display: none;">
+			<section class="main__time time">
 				<h1 class="time__title">Ваши любимые герои<br />
-					<span class="time__title--big">на большом экране</span><br />
+					<span class="time__title--big">на&nbsp;большом&nbsp;экране</span><br />
 					<span class="time__title--highlight">с 4 апреля</span>
 				</h1>
 				<!--Только для мобильной-планшетной версий-->
 				<div class="time__center center">
 					<div class="center__wrap center__wrap--left">
-						<img class="center__image" src="img/left-img.png" alt="Additional image" />
+						<img class="center__image" src="img/first-img.svg" alt="Additional image" />
 					</div>
 					<div class="center__wrap center__wrap--center">
-						<img class="center__image" src="img/center-img.png" alt="Additional image" />
+						<img class="center__image center__image--top" src="img/second-img.svg" alt="Additional image" />
+						<img class="center__image center__image--bottom" src="img/fourth-img.svg" alt="Additional image" />
 					</div>
 					<div class="center__wrap center__wrap--right">
-						<img class="center__image" src="img/right-img.png" alt="Additional image" />
+						<img class="center__image" src="img/third-img.svg" alt="Additional image" />
 					</div>
 				</div>
 				<h2 class="time__subtitle">До кинопоказа в <span class="time__city" id="city-moscow">Москве</span>:</h2>
 				<ul class="time__list time-list" id="time-list">
 					<li class="time-list__item time-list__item--days">
-						<b class="time-list__counter time-list__counter--days days">00</b>
-						<span class="time-list__name">дней</span>
+						<p class="time-list__counter time-list__counter--days days">00</p>
+						<span class="time-list__name daysNum" id="daysNum">дней</span>
 					</li>
 					<li class="time-list__item time-list__item--hours">
-						<b class="time-list__counter time-list__counter--hours hours">00</b>
-						<span class="time-list__name">часов</span>
+						<p class="time-list__counter time-list__counter--hours hours">00</p>
+						<span class="time-list__name hoursNum" id="hoursNum">часов</span>
 					</li>
 					<li class="time-list__item time-list__item--minutes">
-						<b class="time-list__counter time-list__counter--minutes minutes">00</b>
-						<span class="time-list__name">минут</span>
+						<p class="time-list__counter time-list__counter--minutes minutes">00</p>
+						<span class="time-list__name minutesNum" id="minutesNum">минут</span>
 					</li>
 					<li class="time-list__item time-list__item--seconds">
-						<b class="time-list__counter time-list__counter--seconds seconds">00</b>
-						<span class="time-list__name">секунд</span>
+						<p class="time-list__counter time-list__counter--seconds seconds">00</p>
+						<span class="time-list__name secondsNum" id="secondsNum">секунд</span>
 					</li>
 				</ul>
 				<!--Кнопки-->
 				<div class="main__controls controls">
-					<button class="controls__event" type="button">Хочу билет</button>
-					<a class="controls__more" href="about.html">
-						<span class="controls__text">Узнать больше</span>
-					</a>
+					<button class="controls__event" type="button">Выиграть&nbsp;билет</button>
+					<a class="controls__more" href="about.html">Узнать&nbsp;больше</a>
 				</div>
 			</section>
 			<!--Блок со вторым шагом, активен по клику на кнопку "Хочу билет"-->
-			<section class="main__event event">
+			<section class="main__event event" style="display: none;">
 				<h2 class="event__title">Досмотри трейлер до конца, укажи свой e-mail и номер телефона, и получи возможность выиграть билеты в кино.</h2>
 				<div class="event__play">
 				<div class="event__wrap">
@@ -152,11 +151,11 @@
 						</li>
 						<li class="form-list__item form-list__item--checkbox form-list__item--personal">
 							<input class="form-list__checkbox visually-hidden" type="checkbox" name="personal" id="personal" required />
-							<label class="form-list__label form-list__label--checkbox" for="personal">Я согласен на обработку моих персональных данных</label>
+							<label class="form-list__label form-list__label--checkbox" for="personal">Я согласен на обработку моих <a class="form-list__link" href="#" target="_blank">персональных данных</a></label>
 						</li>
 						<li class="form-list__item form-list__item--checkbox form-list__item--conditions">
 							<input class="form-list__checkbox visually-hidden" type="checkbox" name="conditions" id="conditions" required />
-							<label class="form-list__label form-list__label--checkbox" for="conditions">Я согласен с условиями проведения акции</label>
+							<label class="form-list__label form-list__label--checkbox" for="conditions">Я согласен с <a class="form-list__link" href="#" target="_blank">условиями проведения </a>акции</label>
 						</li>
 						<li class="form-list__item form-list__item--checkbox form-list__item--email">
 							<input class="form-list__checkbox visually-hidden" type="checkbox" name="sending" id="sending" />
@@ -193,7 +192,7 @@
 		<div class="popup-thanks__wrapper">
 			<button class="popup-thanks__close" type="button"></button>
 			<h2 class="popup-thanks__title">Спасибо!</h2>
-			<p class="popup-thanks__description">Победители будут объявлены хх апреля</p>
+			<p class="popup-thanks__description">Победители будут объявлены 3 апреля</p>
 			<b class="popup-thanks__subtitle">Рассказать друзьям:</b>
 			<div class="popup-thanks__share">
 				<button class="popup-thanks__btn popup-thanks__btn--vk" type="button">

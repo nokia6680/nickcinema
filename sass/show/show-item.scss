@@ -18,12 +18,17 @@
     line-height: 1;
     text-transform: uppercase;
 
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     text-align: center;
 
     &--nella {
-      margin-bottom: 16px;
+      margin-bottom: 26px;
+    }
+
+    &--blaze {
+      width: 280px;
+      margin-bottom: 26px;
     }
   }
 
@@ -256,15 +261,16 @@
         size: 2em;
       }
 
-      margin-top: 80px;
-      margin-bottom: 47px;
+      margin-top: 20px;
+      margin-bottom: 80px;
 
       &--nella {
-        margin-bottom: 15px;
+        margin-bottom: 49px;
       }
 
       &--blaze {
-        margin-bottom: 15px;
+        margin-bottom: 49px;
+        width: 100%;
       }
     }
 
@@ -392,6 +398,7 @@
 
       &--blaze {
         margin-bottom: 80px;
+        width: 100%;
       }
     }
 

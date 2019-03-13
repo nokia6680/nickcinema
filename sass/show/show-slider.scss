@@ -126,15 +126,15 @@
 @media only screen and (min-width: 414px) {
   .show-slider {
     .slick-dots {
-      top: 496px;
+      top: 470px;
     }
     /*Кнопки*/
     .prev-1 {
       width: 25px;
       height: 28px;
 
-      top: 44%;
-      left: 5px;
+      top: 42%;
+      left: 0px;
 
       background-size: 25px 28px;
     }
@@ -143,8 +143,8 @@
       width: 25px;
       height: 28px;
 
-      top: 44%;
-      right: 5px;
+      top: 42%;
+      right: 0px;
 
       background-size: 25px 28px;
     }
@@ -162,7 +162,7 @@
       height: 59px;
 
       top: 35%;
-      left: 10px;
+      left: 5px;
 
       background-size: 52px 59px;
     }
@@ -172,7 +172,7 @@
       height: 59px;
 
       top: 35%;
-      right: 10px;
+      right: 5px;
 
       background-size: 52px 59px;
     }

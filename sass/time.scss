@@ -20,12 +20,12 @@
     text-transform: uppercase;
     text-align: center;
 
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
 
     &--big {
       font: {
-        size: 28px;
+        size: 24px;
       }
     }
 
@@ -118,7 +118,7 @@
 
     &__subtitle {
       font: {
-        size: 2em;
+        size: 1.943em;
       }
 
       margin-bottom: 5px;
@@ -179,7 +179,7 @@
       }
 
       margin-top: 0;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
 
       &--big {
         font: {
