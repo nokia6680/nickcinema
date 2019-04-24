@@ -39,6 +39,8 @@
   }
 
   &__subtitle {
+    display: none;
+    
     font: {
       size: 1em;
       family: $bold-font;
