@@ -11,8 +11,8 @@
 
   &__wrap {
     &--left {
-      min-width: 110px;
-      max-width: 110px;
+      min-width: 120px;
+      max-width: 120px;
     }
 
     &--center {
@@ -21,8 +21,8 @@
     }
 
     &--right {
-      min-width: 110px;
-      max-width: 110px;
+      min-width: 120px;
+      max-width: 120px;
     }
   }
 }
@@ -32,37 +32,21 @@
     width: 100%;
     max-width: 394px;
 
-    margin-bottom: 0px;
-
     &__wrap {
       &--left {
-        min-width: 130px;
-        max-width: 130px;
+        min-width: 140px;
+        max-width: 140px;
       }
 
       &--center {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-        min-width: 130px;
-        max-width: 130px;
+        min-width: 120px;
+        max-width: 120px;
       }
 
       &--right {
-        min-width: 130px;
-        max-width: 130px;
+        min-width: 140px;
+        max-width: 140px;
       }
-    }
-
-    &__image--top {
-      max-width: 80px;
-    }
-
-    &__image--bottom {
-      max-width: 150px;
-      min-width: 150px;
     }
   }
 }
@@ -70,39 +54,23 @@
 @media only screen and (min-width: $tablet) {
   .center {
     max-width: 680px;
-    margin-bottom: 0;
-    align-items: flex-start;
 
     &__wrap {
       &--left {
-        min-width: 210px;
-        max-width: 210px;
+        min-width: 233px;
+        max-width: 233px;
         margin-top: 30px;
       }
 
       &--center {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-        min-width: 260px;
-        max-width: 260px;
+        min-width: 223px;
+        max-width: 223px;
       }
 
       &--right {
-        min-width: 210px;
-        min-width: 210px;
+        min-width: 233px;
+        min-width: 233px;
       }
-    }
-
-    &__image--top {
-      max-width: 100px;
-    }
-
-    &__image--bottom {
-      max-width: 250px;
-      min-width: 250px;
     }
   }
 }

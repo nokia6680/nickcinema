@@ -199,10 +199,13 @@
         border-radius: 30px;
         padding-left: 0px;
         padding-right: 15px;
+
+        display: block;
       }
 
       &--schedule {
         order: 2;
+        display: none;
       }
 
       &--about {
@@ -215,6 +218,7 @@
 
       &--rules {
         order: 5;
+        display: none;
       }
     }
 

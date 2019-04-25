@@ -59,9 +59,10 @@
       align-items: center;
 
       &--up {
-        margin-top: 40px;
-        min-width: 272px;
-        min-height:213px;
+        margin-top: 10px;
+        min-width: 240px;
+        max-width: 220px;
+        min-height: 220px;
       }
 
       &--upabout {
@@ -72,8 +73,10 @@
       }
 
       &--down {
-        min-width: 282px;
-        min-height: 159px;
+        min-width: 274px;
+        max-width: 274px;
+        max-height: 274px;
+        min-height: 274px;
       }
 
       &--downabout {
@@ -91,23 +94,16 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
     width: 380px;
     margin-right: 40px;
 
     &__wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
       &--up {
-        min-width: 300px;
-        min-height: 264px;
+        margin-top: 40px;
+        min-width: 316px;
+        max-width: 316px;
+        max-height: 316px;
       }
 
       &--upabout {
@@ -118,8 +114,10 @@
       }
 
       &--down {
-        min-width: 330px;
-        min-height: 186px;
+        min-width: 370px;
+        max-width: 370px;
+        min-height: 368px;
+        max-height: 368px;
       }
 
       &--downabout {
