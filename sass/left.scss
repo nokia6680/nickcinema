@@ -59,10 +59,12 @@
       align-items: center;
 
       &--up {
-        margin-top: 10px;
-        min-width: 240px;
-        max-width: 220px;
-        min-height: 220px;
+        min-width: 254px;
+        max-width: 254px;
+        max-height: 241px;
+        min-height: 241px;
+
+        margin-top: 40px;
       }
 
       &--upabout {
@@ -73,10 +75,11 @@
       }
 
       &--down {
-        min-width: 274px;
-        max-width: 274px;
-        max-height: 274px;
-        min-height: 274px;
+        min-width: 284px;
+        max-width: 284px;
+        max-height: 265px;
+        height: 265px;
+        min-height: 265px;
       }
 
       &--downabout {

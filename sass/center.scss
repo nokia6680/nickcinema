@@ -5,24 +5,41 @@
   align-items: center;
 
   width: 320px;
+  height: 100px;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  position: relative;
+
+  margin-top: 15px;
+  margin-bottom: 10px;
 
   &__wrap {
+
     &--left {
-      min-width: 120px;
-      max-width: 120px;
+      min-width: 100px;
+      max-width: 100px;
+
+      position: absolute;
+
+      left: 5px;
     }
 
     &--center {
-      min-width: 100px;
-      max-width: 100px;
+      min-width: 130px;
+      max-width: 130px;
+
+      position: absolute;
+
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &--right {
-      min-width: 120px;
-      max-width: 120px;
+      min-width: 110px;
+      max-width: 110px;
+
+      position: absolute;
+      right: 10px;
+      z-index: -1;
     }
   }
 }
@@ -31,21 +48,22 @@
   .center {
     width: 100%;
     max-width: 394px;
+    height: 150px;
 
     &__wrap {
       &--left {
-        min-width: 140px;
-        max-width: 140px;
-      }
-
-      &--center {
         min-width: 120px;
         max-width: 120px;
       }
 
+      &--center {
+        min-width: 170px;
+        max-width: 170px;
+      }
+
       &--right {
-        min-width: 140px;
-        max-width: 140px;
+        min-width: 130px;
+        max-width: 130px;
       }
     }
   }
@@ -54,22 +72,22 @@
 @media only screen and (min-width: $tablet) {
   .center {
     max-width: 680px;
+    height: 280px;
 
     &__wrap {
       &--left {
-        min-width: 233px;
-        max-width: 233px;
-        margin-top: 30px;
+        min-width: 205px;
+        max-width: 205px;
       }
 
       &--center {
-        min-width: 223px;
-        max-width: 223px;
+        min-width: 294px;
+        max-width: 260px;
       }
 
       &--right {
-        min-width: 233px;
-        min-width: 233px;
+        min-width: 214px;
+        min-width: 214px;
       }
     }
   }
