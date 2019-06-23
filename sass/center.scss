@@ -24,8 +24,8 @@
     }
 
     &--center {
-      min-width: 130px;
-      max-width: 130px;
+      min-width: 140px;
+      max-width: 140px;
 
       position: absolute;
 
@@ -34,8 +34,8 @@
     }
 
     &--right {
-      min-width: 110px;
-      max-width: 110px;
+      min-width: 100px;
+      max-width: 100px;
 
       position: absolute;
       right: 10px;
@@ -76,18 +76,20 @@
 
     &__wrap {
       &--left {
-        min-width: 205px;
-        max-width: 205px;
+        left: 20px;
+        min-width: 195px;
+        max-width: 195px;
       }
 
       &--center {
-        min-width: 294px;
-        max-width: 260px;
+        min-width: 292px;
+        max-width: 292px;
       }
 
       &--right {
-        min-width: 214px;
-        min-width: 214px;
+        right: 20px;
+        min-width: 188px;
+        min-width: 188px;
       }
     }
   }

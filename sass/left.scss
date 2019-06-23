@@ -59,12 +59,12 @@
       align-items: center;
 
       &--up {
-        min-width: 254px;
-        max-width: 254px;
-        max-height: 241px;
-        min-height: 241px;
+        min-width: 236px;
+        max-width: 236px;
+        max-height: 268px;
+        min-height: 268px;
 
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       &--upabout {
@@ -75,11 +75,11 @@
       }
 
       &--down {
-        min-width: 284px;
-        max-width: 284px;
-        max-height: 265px;
-        height: 265px;
-        min-height: 265px;
+        min-width: 263px;
+        max-width: 263px;
+        max-height: 275px;
+        height: 275px;
+        min-height: 275px;
       }
 
       &--downabout {
@@ -103,10 +103,10 @@
     &__wrap {
 
       &--up {
-        margin-top: 40px;
-        min-width: 316px;
-        max-width: 316px;
-        max-height: 316px;
+        margin-top: 0px;
+        min-width: 313px;
+        max-width: 313px;
+        max-height: 364px;
       }
 
       &--upabout {
@@ -117,10 +117,10 @@
       }
 
       &--down {
-        min-width: 370px;
-        max-width: 370px;
-        min-height: 368px;
-        max-height: 368px;
+        min-width: 348px;
+        max-width: 348px;
+        min-height: 370px;
+        max-height: 370px;
       }
 
       &--downabout {
