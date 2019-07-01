@@ -9,10 +9,6 @@
   position: relative;
 }
 
-@media only screen and (min-width: $tablet) {
-
-}
-
 @media only screen and (min-width: $laptop) {
   .main {
     flex-direction: row;
