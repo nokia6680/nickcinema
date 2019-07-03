@@ -33,6 +33,52 @@ if (menuMobile) {
   });
 }
 
+/*
+$(document).ready(function(){
+  $('.project').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+		fade: false,
+    arrows: true,
+		prevArrow: '<div class="left"></div>',
+		nextArrow: '<div class="right"></div>'
+  });
+});*/
+
+// Подпишемся на ресайз и продиспатчим его для запуска
+$(window).on('resize', function(e){
+  // Переменная, по которой узнаем запущен слайдер или нет.
+  // Храним её в data
+  var init = $("#project").data('init-slider');
+  // Если мобильный
+  if(window.innerWidth < 1366){
+    // Если слайдер не запущен
+    if(init != 1){
+      // Запускаем слайдер и записываем в data init-slider = 1
+      $('#project').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+    		fade: false,
+        arrows: true,
+    		prevArrow: '<div class="left"></div>',
+    		nextArrow: '<div class="right"></div>'
+      }).data({'init-slider': 1});
+    }
+  }
+  // Если десктоп
+  else {
+    // Если слайдер запущен
+    if(init == 1){
+      // Разрушаем слайдер и записываем в data init-slider = 0
+      $('#project').slick('unslick').data({'init-slider': 0});
+    }
+  }
+}).trigger('resize');
+
 /*Слайдер страницы о ШОУ*/
 $(document).ready(function(){
   $('.show-slider').slick({

@@ -1,3 +1,343 @@
 .project {
   width: 300px;
+
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    max-width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 140px;
+  }
+
+  &__pic {
+    max-height: 140px;
+  }
+
+  &__description {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title {
+    font: {
+      size: 0.78em;
+      family: $bold-font;
+      weight: 400;
+    }
+
+    color: $text-white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__about {
+    font: {
+      size: 0.625em;
+      family: $regular-font;
+      weight: 300;
+    }
+
+    color: $text-white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+
+    text-align: center;
+  }
+
+  &__status {
+    font: {
+      size: 0.78em;
+      family: $bold-font;
+      weight: 400;
+    }
+
+    color: $text-white;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .project {
+    width: 394px;
+    position: relative;
+
+    .left {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/left.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 25px;
+      height: 29px;
+
+      left: 0;
+      top: 23%;
+
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .right {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/right.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 25px;
+      height: 29px;
+
+      right: 0;
+      top: 23%;
+
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .slick-disabled {
+      opacity: 0.5;
+    }
+
+    &__image {
+      width: 100%;
+      max-height: 240px;
+      margin-bottom: 15px;
+    }
+
+    &__pic {
+      max-height: 240px;
+    }
+
+    &__description {
+      width: 360px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font: {
+        size: 1.125em;
+      }
+
+      margin-bottom: 5px;
+    }
+
+    &__about {
+      font: {
+        size: 0.875em;
+      }
+
+      margin-bottom: 5px;
+    }
+
+    &__status {
+      font: {
+        size: 1.125em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .project {
+    width: 644px;
+
+    .left {
+      left: -25px;
+      top: 45%;
+    }
+
+    .right {
+      right: -25px;
+      top: 45%;
+    }
+
+    &__item {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    &__image {
+      width: 306px;
+      max-height: 293px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    &__pic {
+      max-height: 293px;
+    }
+
+    &__description {
+      width: 306px;
+      margin: 0;
+      padding-top: 10px;
+      align-items: flex-start;
+    }
+
+    &__title {
+      font: {
+        size: 1.5em;
+      }
+
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    &__about {
+      font: {
+        size: 1em;
+      }
+
+      margin-bottom: 15px;
+      text-align: left;
+      max-width: 290px;
+    }
+
+    &__status {
+      font: {
+        size: 1.5em;
+      }
+
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .project {
+    width: 50%;
+
+    &:not(.slick-initialized) {
+      visibility: visible;
+      max-width: 100%;
+    }
+
+    .left {
+      display: none;
+    }
+
+    .right {
+      display: none;
+    }
+
+    &__image {
+      width: 285px;
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+
+    &__pic {
+      max-height: 275px;
+    }
+
+    &__description {
+      width: 325px;
+      padding-top: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 1.25em;
+      }
+
+      margin-bottom: 15px;
+    }
+
+    &__about {
+      font: {
+        size: 0.875em;
+      }
+
+      max-width: 315px;
+    }
+
+    &__status {
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .project {
+    width: 50%;
+
+    &__image {
+      width: 364px;
+      margin-right: 80px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__pic {
+      max-height: 363px;
+    }
+
+    &__description {
+      width: 380px;
+      padding-top: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 25px;
+    }
+
+    &__about {
+      font: {
+        size: 1.25em;
+      }
+
+      max-width: 380px;
+      margin-bottom: 25px;
+    }
+
+    &__status {
+      font: {
+        size: 1.75em;
+      }
+    }
+  }
 }
