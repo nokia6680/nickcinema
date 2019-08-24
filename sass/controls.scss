@@ -160,6 +160,10 @@
 
 @media only screen and (min-width: $laptop) {
   .controls {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+
     &__more {
       width: 283px;
       height: 52px;
@@ -179,13 +183,15 @@
         background-size: 35px 35px;
         left: 10px;
       }
+
+      margin-bottom: 0;
     }
 
     &__event {
       width: 283px;
-      height: 69px;
+      height: 52px;
 
-      margin-bottom: 20px;
+      margin-bottom: 0;
 
       border-radius: 50px;
 
@@ -198,6 +204,9 @@
 
 @media only screen and (min-width: $laptop-wide) {
   .controls {
+    flex-direction: column;
+    justify-content: flex-start;
+    
     &__more {
       width: 393px;
       height: 72px;

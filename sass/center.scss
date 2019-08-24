@@ -9,7 +9,7 @@
 
   position: relative;
 
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 10px;
 
   &__wrap {
@@ -24,8 +24,8 @@
     }
 
     &--center {
-      min-width: 140px;
-      max-width: 140px;
+      min-width: 120px;
+      max-width: 120px;
 
       position: absolute;
 
@@ -38,7 +38,7 @@
       max-width: 100px;
 
       position: absolute;
-      right: 10px;
+      right: 5px;
       z-index: -1;
     }
   }
@@ -57,8 +57,8 @@
       }
 
       &--center {
-        min-width: 170px;
-        max-width: 170px;
+        min-width: 150px;
+        max-width: 150px;
       }
 
       &--right {
@@ -88,8 +88,8 @@
 
       &--right {
         right: 20px;
-        min-width: 188px;
-        min-width: 188px;
+        min-width: 202px;
+        min-width: 202px;
       }
     }
   }
