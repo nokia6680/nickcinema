@@ -39,15 +39,41 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.body-program {
+  min-height: 100vh;
+  background-color: #007fb4;
+  background-image: url('../img/bg-schedule.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media only screen and (min-width: 1366px) {
+    overflow: hidden;
+  }
+}
+
 .body--index {
   background-color: $bg-body;
-  background-image: url('../img/bg-index.jpg');
+  background-image: url('../img/bg-reskin.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
-  @media only screen and (min-width: $laptop-wide) {
-    background-position: bottom center;
+  @media only screen and (min-width: $tablet) {
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: $laptop) {
+    background-position: top center;
+
+    overflow: hidden;
   }
 }
 

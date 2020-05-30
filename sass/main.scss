@@ -24,6 +24,11 @@
 
       margin-top: 100px;
     }
+
+    &--schedule {
+      max-width: 1280px;
+      @include flex-setting(row, center, flex-start);
+    }
   }
 }
 
@@ -37,8 +42,14 @@
       align-items: center;
       justify-content: center;
 
+      margin-top: 0;
+
       padding-right: 120px;
       padding-left: 120px;
+    }
+
+    &--schedule {
+      max-width: 1780px;
     }
   }
 }

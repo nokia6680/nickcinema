@@ -1,7 +1,7 @@
 .center {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   width: 320px;
@@ -9,37 +9,15 @@
 
   position: relative;
 
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 10px;
 
-  &__wrap {
-
-    &--left {
-      min-width: 100px;
-      max-width: 100px;
-
-      position: absolute;
-
-      left: 5px;
-    }
-
-    &--center {
-      min-width: 120px;
-      max-width: 120px;
-
-      position: absolute;
-
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  &__pic {
+    max-height: 100px;
 
     &--right {
-      min-width: 100px;
-      max-width: 100px;
-
-      position: absolute;
-      right: 5px;
-      z-index: -1;
+      max-height: 110px;
+      margin-left: -10px;
     }
   }
 }
@@ -47,49 +25,28 @@
 @media only screen and (min-width: 414px) {
   .center {
     width: 100%;
-    max-width: 394px;
-    height: 150px;
+    max-width: 380px;
 
-    &__wrap {
-      &--left {
-        min-width: 120px;
-        max-width: 120px;
-      }
+    margin-top: 15px;
+    margin-bottom: 25px;
 
-      &--center {
-        min-width: 150px;
-        max-width: 150px;
-      }
-
-      &--right {
-        min-width: 130px;
-        max-width: 130px;
-      }
+    &__pic {
+      max-height: 120px;
     }
   }
 }
 
 @media only screen and (min-width: $tablet) {
   .center {
-    max-width: 680px;
-    height: 280px;
+    max-width: 660px;
+    margin-bottom: 50px;
 
-    &__wrap {
-      &--left {
-        left: 20px;
-        min-width: 195px;
-        max-width: 195px;
-      }
-
-      &--center {
-        min-width: 292px;
-        max-width: 292px;
-      }
+    &__pic {
+      max-height: 160px;
 
       &--right {
-        right: 20px;
-        min-width: 202px;
-        min-width: 202px;
+        max-height: 180px;
+        margin-left: -20px;
       }
     }
   }

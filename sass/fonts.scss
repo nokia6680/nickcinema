@@ -1,10 +1,27 @@
 @font-face {
+	font-family: 'Gotham';
+	src: url("../fonts/GothamExtraLight.eot");
+	src: local('☺'), url("../fonts/GothamExtraLight.woff") format('woff'), url("../fonts/GothamExtraLight.ttf") format('truetype'), url("../fonts/GothamExtraLight.svg") format('svg'), url("../fonts/GothamExtraLight.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url("../fonts/GothamUltraItalic.eot");
+	src: local('☺'), url("../fonts/GothamUltraItalic.woff") format('woff'), url("../fonts/GothamUltraItalic.ttf") format('truetype'), url("../fonts/GothamUltraItalic.svg") format('svg'), url("../fonts/GothamUltraItalic.otf") format("opentype");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'Gotham Extra Light';
 	src: url("../fonts/GothamExtraLight.eot");
 	src: local('☺'), url("../fonts/GothamExtraLight.woff") format('woff'), url("../fonts/GothamExtraLight.ttf") format('truetype'), url("../fonts/GothamExtraLight.svg") format('svg'), url("../fonts/GothamExtraLight.otf") format("opentype");
 	font-weight: 100;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'Arista-fat';
 	src: url("../fonts/Zetafonts - AristaProAlternate-Fat.eot");

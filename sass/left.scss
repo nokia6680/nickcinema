@@ -1,138 +1,38 @@
 .left {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 380px;
-  margin-right: 40px;
-
-  &__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &--up {
-      min-width: 300px;
-      min-height: 352px;
-    }
-
-    &--upabout {
-      min-width: 310px;
-      min-height: 373px;
-
-      margin-bottom: 20px;
-    }
-
-    &--down {
-      min-width: 330px;
-      min-height: 369px;
-    }
-
-    &--downabout {
-      min-width: 351px;
-      min-height: 351px;
-    }
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media only screen and (min-width: $laptop) {
   .left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     width: 320px;
+    height: 500px;
     margin-right: 0px;
 
-    &__wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    position: relative;
 
-      &--up {
-        min-width: 220px;
-        max-width: 220px;
-        max-height: 245px;
-        min-height: 245px;
-
-        margin-top: 10px;
-      }
-
-      &--upabout {
-        min-width: 257px;
-        min-height: 306px;
-
-        margin-bottom: 20px;
-      }
-
-      &--down {
-        min-width: 230px;
-        max-width: 230px;
-        max-height: 243px;
-        height: 243px;
-        min-height: 243px;
-      }
-
-      &--downabout {
-        min-width: 271px;
-        min-height: 271px;
-      }
-    }
-
-    &__image {
-      width: 100%;
-      height: auto;
+    &__pic {
+      margin-top: 50px;
+      margin-left: 170px;
+      max-width: 300px;
     }
   }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .left {
-    width: 380px;
-    margin-right: 40px;
+    width: 500px;
+    height: 750px;
+    margin-right: 0;
 
-    &__wrap {
-
-      &--up {
-        margin-top: 0px;
-        min-width: 316px;
-        max-width: 316px;
-        max-height: 360px;
-        min-height: 360px;
-      }
-
-      &--upabout {
-        min-width: 310px;
-        min-height: 373px;
-
-        margin-bottom: 20px;
-      }
-
-      &--down {
-        min-width: 351px;
-        max-width: 351px;
-        min-height: 379px;
-        max-height: 379px;
-      }
-
-      &--downabout {
-        min-width: 351px;
-        min-height: 351px;
-      }
-    }
-
-    &__image {
-      width: 100%;
-      height: auto;
+    &__pic {
+      margin-top: 100px;
+      margin-left: 260px;
+      max-width: 423px;
     }
   }
 }

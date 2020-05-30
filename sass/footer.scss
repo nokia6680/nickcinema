@@ -16,6 +16,28 @@
 
   position: relative;
 
+  &__pics {
+    position: absolute;
+    bottom: 22px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    z-index: -1;
+  }
+
+  &__photo {
+    max-height: 100px;
+
+    &--right {
+      display: none;
+    }
+  }
+
   &__wrapper {
     @include container;
 
@@ -47,11 +69,19 @@
 }
 
 @media only screen and (min-width: 414px) {
-
+  .footer {
+    &__photo {
+      max-height: 120px;
+    }
+  }
 }
 
 @media only screen and (min-width: $tablet) {
-
+  .footer {
+    &__photo {
+      max-height: 250px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {
@@ -72,6 +102,22 @@
     align-items: center;
 
     position: relative;
+
+    &__pics {
+      bottom: 0;
+    }
+
+    &__photo {
+      max-height: 320px;
+
+      &--inv {
+        display: none;
+      }
+
+      &--right {
+        display: block;
+      }
+    }
 
     &__wrapper {
       display: flex;
@@ -100,6 +146,14 @@
       text-transform: uppercase;
 
       margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .footer {
+    &__photo {
+      max-height: 500px;
     }
   }
 }

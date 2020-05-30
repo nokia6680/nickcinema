@@ -80,109 +80,41 @@
 		<main class="main">
 			<!--Левый блок с логотипами-->
 			<div class="main__left left">
-				<div class="left__wrap left__wrap--up">
-					<img class="left__image" src="img/left-first.png" alt="Additional image" />
-				</div>
-				<div class="left__wrap left__wrap--down">
-					<img class="left__image left__image--bottom" src="img/left-second.png" alt="Additional image" />
-				</div>
+				<img class="left__pic" src="img/left-center.png" />
 			</div>
 			<!--Блок с отсчетом времени, он же ШАГ 1-->
 			<section class="main__time time">
-				<h1 class="time__title">Щенячий патруль<br />
-					<span class="time__title--big">Возвращается</span><br />
-					<span class="time__title--highlight">с 29 августа</span>
+				<h1 class="time__title">
+					<img class="time__title--image" src="img/title-text.png" alt="Мегащенки - электролапы!" />
 				</h1>
 				<!--Только для мобильной-планшетной версий-->
 				<div class="time__play">
 					<div class="time__wrap">
-						<iframe class="time__video" src="https://www.youtube.com/embed/3T5Ez6NblfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="time__video" src="https://www.youtube.com/embed/F14iRN5b_7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="time__center center">
-					<div class="center__wrap center__wrap--left">
-						<img class="center__image" src="img/left-first.png" alt="Additional image" />
-					</div>
-					<div class="center__wrap center__wrap--center">
-						<img class="center__image" src="img/left-second.png" alt="Additional image" />
-					</div>
-					<div class="center__wrap center__wrap--right">
-						<img class="center__image" src="img/right-first.png" alt="Additional image" />
-					</div>
+					<img class="center__pic center__pic--left" src="img/left-center.png">
+					<img class="center__pic center__pic--right" src="img/right-center.png">
 				</div>
-				<!--
-				<h2 class="time__subtitle">До кинопоказа в <span class="time__city" id="city-moscow">Москве</span>:</h2>
-				<ul class="time__list time-list" id="time-list">
-					<li class="time-list__item time-list__item--days">
-						<p class="time-list__counter time-list__counter--days days">00</p>
-						<span class="time-list__name daysNum" id="daysNum">дней</span>
-					</li>
-					<li class="time-list__item time-list__item--hours">
-						<p class="time-list__counter time-list__counter--hours hours">00</p>
-						<span class="time-list__name hoursNum" id="hoursNum">часов</span>
-					</li>
-					<li class="time-list__item time-list__item--minutes">
-						<p class="time-list__counter time-list__counter--minutes minutes">00</p>
-						<span class="time-list__name minutesNum" id="minutesNum">минут</span>
-					</li>
-					<li class="time-list__item time-list__item--seconds">
-						<p class="time-list__counter time-list__counter--seconds seconds">00</p>
-						<span class="time-list__name secondsNum" id="secondsNum">секунд</span>
-					</li>
-				</ul>
-				-->
 				<!--Кнопки-->
 				<div class="main__controls controls">
 					<button class="controls__event" type="button">Купить&nbsp;билет</button>
 					<a class="controls__more" href="more.html">Узнать&nbsp;больше</a>
 				</div>
 			</section>
-			<!--Блок со вторым шагом, активен по клику на кнопку "Хочу билет"-->
-			<section class="main__event event" style="display: none;">
-				<h2 class="event__title">Досмотри трейлер до конца, укажи свой e-mail и номер телефона, и получи возможность выиграть билеты в кино.</h2>
-				<div class="event__play">
-				<div class="event__wrap">
-					<iframe class="event__video" src="https://www.youtube.com/embed/tl-M6AYS-tI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				</div>
-				<form class="event__form form-event">
-					<ul class="form-event__list form-list">
-						<li class="form-list__item">
-							<label class="form-list__label" for="email">Ваш e-mail:</label>
-							<input class="form-list__input" type="email" name="email" id="email" required />
-						</li>
-						<li class="form-list__item">
-							<label class="form-list__label" for="tel">Номер телефона:</label>
-							<input class="form-list__input" type="tel" name="tel" id="tel" required />
-						</li>
-						<li class="form-list__item form-list__item--checkbox form-list__item--personal">
-							<input class="form-list__checkbox visually-hidden" type="checkbox" name="personal" id="personal" required />
-							<label class="form-list__label form-list__label--checkbox" for="personal">Я согласен на обработку моих <a class="form-list__link" href="#" target="_blank">персональных данных</a></label>
-						</li>
-						<li class="form-list__item form-list__item--checkbox form-list__item--conditions">
-							<input class="form-list__checkbox visually-hidden" type="checkbox" name="conditions" id="conditions" required />
-							<label class="form-list__label form-list__label--checkbox" for="conditions">Я согласен с <a class="form-list__link" href="#" target="_blank">условиями проведения </a>акции</label>
-						</li>
-						<li class="form-list__item form-list__item--checkbox form-list__item--email">
-							<input class="form-list__checkbox visually-hidden" type="checkbox" name="sending" id="sending" />
-							<label class="form-list__label form-list__label--checkbox" for="sending">Я согласен на получение e-mail рассылки</label>
-						</li>
-					</ul>
-					<button class="form-event__submit" type="submit">Отправить!</button>
-				</form>
-			</section>
 			<!--Правый блок с логотипами-->
 			<div class="main__right right">
-				<div class="right__wrap right__wrap--up">
-					<img class="right__image" src="img/right-first.png" alt="Additional image" />
-				</div>
-				<div class="right__wrap right__wrap--down">
-					<img class="right__image" src="img/right-second.png" alt="Additional image" />
-				</div>
+				<img class="right__pic" src="img/right-center.png"  />
 			</div>
 		</main>
 		<!--Page footer-->
 		<footer class="footer">
+			<div class="footer__pics">
+				<img class="footer__photo footer__photo--inv" src="img/bottom-right-inverted.png" />
+				<img class="footer__photo footer__photo--left" src="img/bottom-left.png" />
+				<img class="footer__photo footer__photo--right" src="img/bottom-right.png" />
+			</div>
 			<div class="footer__wrapper">
 				<!--Copyrights-->
 				<div class="footer__copyright">
@@ -191,24 +123,6 @@
 				</div>
 			</div>
 		</footer>
-	</div>
-	<!--Попапы-->
-	<!--Попап "Спасибо"-->
-	<div class="popup-thanks" style="display: none;">
-		<div class="popup-thanks__wrapper">
-			<button class="popup-thanks__close" type="button"></button>
-			<h2 class="popup-thanks__title">Спасибо!</h2>
-			<p class="popup-thanks__description">Победители будут объявлены 3 апреля</p>
-			<b class="popup-thanks__subtitle">Рассказать друзьям:</b>
-			<div class="popup-thanks__share">
-				<button class="popup-thanks__btn popup-thanks__btn--vk" type="button">
-					<i class="fab fa-vk"></i>
-				</button>
-				<button class="popup-thanks__btn popup-thanks__btn--fb" type="button">
-					<i class="fab fa-facebook-f"></i>
-				</button>
-			</div>
-		</div>
 	</div>
 	<script src="js/script.js"></script>
 </body>

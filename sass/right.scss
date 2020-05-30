@@ -1,147 +1,39 @@
 .right {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 380px;
-
-  margin-left: 40px;
-
-  &__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &--up {
-      min-width: 330px;
-      min-height: 350px;
-    }
-
-    &--upabout {
-      min-width: 350px;
-      min-height: 305px;
-
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-
-    &--down {
-      min-width: 300px;
-      min-height: 378px;
-    }
-
-    &--downabout {
-      min-width: 316px;
-      min-height: 331px;
-    }
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media only screen and (min-width: $laptop) {
   .right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     width: 320px;
+    height: 500px;
+
+    position: relative;
 
     margin-left: 0px;
-    margin-top: -80px;
+    margin-top: 0;
 
-    &__wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      &--up {
-        min-width: 240px;
-        max-width: 240px;
-        max-height: 259px;
-        min-height: 259px;
-
-        margin-bottom: 20px;
-        margin-top: 40px;
-      }
-
-      &--upabout {
-        min-width: 295px;
-        min-height: 262px;
-
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-
-      &--down {
-        min-width: 230px;
-        max-width: 230px;
-        max-height: 245px;
-        height: 245px;
-        min-height: 245px;
-      }
-
-      &--downabout {
-        min-width: 245px;
-        min-height: 251px;
-      }
-    }
-
-    &__image {
-      width: 100%;
-      height: auto;
+    &__pic {
+      margin-top: 50px;
+      margin-right: 170px;
+      max-width: 270px;
     }
   }
 }
 
 @media only screen and (min-width: $laptop-wide) {
   .right {
-    width: 380px;
+    width: 500px;
+    height: 750px;
 
-    margin-left: 40px;
-    margin-top: -40px;
-
-    &__wrap {
-      &--up {
-        min-width: 361px;
-        max-width: 361px;
-        min-height: 392px;
-        max-height: 392px;
-        margin-bottom: 0;
-      }
-
-      &--upabout {
-        min-width: 350px;
-        min-height: 305px;
-
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-
-      &--down {
-        min-width: 316px;
-        max-width: 316px;
-        min-height: 345px;
-        max-height: 345px;
-        margin-bottom: 0;
-      }
-
-      &--downabout {
-        min-width: 316px;
-        min-height: 331px;
-      }
-    }
-
-    &__image {
-      width: 100%;
-      height: auto;
+    &__pic {
+      margin-top: 80px;
+      margin-right: 280px;
+      max-width: 407px;
     }
   }
 }

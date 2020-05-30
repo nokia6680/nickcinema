@@ -1,0 +1,43 @@
+.sch-right {
+  display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  .sch-right {
+    @include flex-setting(column, flex-start, center);
+
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    margin-top: -50px;
+
+    &__top {
+      width: 250px;
+      height: 290px;
+      object-fit: contain;
+    }
+
+    &__bottom {
+      width: 250px;
+      height: 220px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .sch-right {
+    max-width: 440px;
+    margin-top: -50px;
+
+    &__top {
+      width: 340px;
+      height: 460px;
+    }
+
+    &__bottom {
+      width: 400px;
+      height: 300px;
+    }
+  }
+}
